@@ -1,0 +1,548 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FRANZ IVAN | VIDEO EDITOR</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+
+        <!-- Ambient Background Glows -->
+    <div class="ambient-glow glow-red"></div>
+    <div class="ambient-glow glow-yellow"></div>
+
+
+        <!-- Floating Glassmorphism Navbar -->
+    <header class="navbar-wrapper">
+        <nav class="navbar">
+            <div class="nav-logo">
+                <h2>FRANZ IVAN <span>WORKS</span></h2>
+            </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#works" class="active">WORKS</a></li>
+                <li><a href="#brands">BRANDS</a></li>
+                <li><a href="#clients">CLIENTS</a></li>
+                <li><a href="#testimonials">TESTIMONIALS</a></li>
+           <!--    <li><a href="#contact">CONTACT</a></li>  -->
+                <li class="mobile-only"><a href="#contact" class="mobile-book-link">BOOK NOW</a></li>
+            </ul>
+            <a href="#contact" class="btn-book">BOOK NOW</a>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+    </header>
+    
+
+
+
+
+
+<!--home-->
+  <section id="works" class="fc-section">
+  <div class="fc-container">
+    
+    <div class="fc-header-top">
+      <div class="fc-title-group">
+        <span class="fc-subtitle">FEATURED EDITS</span>
+        <h2 class="fc-title">MY FINAL CUTS</h2>
+      </div>
+      
+      <p class="fc-description">
+        A curated collection of high-converting videos crafted for brands, creators, and businesses.
+      </p>
+    </div>
+
+
+
+    <!--
+
+    <div class="fc-tabs-container">
+      <button class="fc-tab-btn active" data-category="ugc">UGC</button>
+      <button class="fc-tab-btn" data-category="ai">AI VIDEOS</button>
+      <button class="fc-tab-btn" data-category="vsl">VSL VIDEOS</button>
+      <button class="fc-tab-btn" data-category="ads">WINNING ADS</button>
+    </div>
+
+    <div class="fc-content-area">
+      <div class="fc-video-grid" id="fcVideoGrid">
+        </div>
+    </div>
+
+-->
+
+
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+    <main>
+        <section class="featured-works" id="works">
+            <div class="container">
+                
+
+              <!--
+
+                <div class="section-header">
+                    <div class="header-left">
+                        <span class="eyebrow">FEATURED EDITS</span>
+                        <h1 class="heading">MY FINAL CUTS</h1>
+                    </div>
+                    <div class="header-right">
+                        <p class="description">A curated collection of high-converting videos crafted for brands, creators, and businesses.</p>
+                    </div>
+                </div>
+
+                -->
+
+
+
+                <!-- Category Tabs -->
+                <div class="category-tabs">
+                    <button class="tab-btn active" data-category="ugc">UGC</button>
+                    <button class="tab-btn" data-category="ai">AI VIDEOS</button>
+                    <button class="tab-btn" data-category="vsl">VSL EDITS</button>
+                    <button class="tab-btn" data-category="winningAds">WINNING ADS</button>
+                </div>
+
+                <!-- Carousel Area -->
+                <div class="carousel-container" id="carouselContainer">
+                    
+                    <button class="nav-btn prev-btn" id="prevBtn">‹</button>
+                    <button class="nav-btn next-btn" id="nextBtn">›</button>
+
+                    <div class="carousel-stage">
+                        
+                        <!-- Left Preview -->
+                        <div class="video-card side-card" id="prevCard">
+                            <div class="video-wrapper">
+                                <video id="prevVideo" muted playsinline></video>
+                                <div class="card-overlay"></div>
+                            </div>
+                        </div>
+
+                        <!-- Main Video -->
+                        <div class="video-card main-card" id="mainCard">
+                            <div class="video-wrapper">
+                                <video id="mainVideo" playsinline></video>
+                                <div class="play-overlay" id="playOverlay">
+                                    <div class="play-button">►</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Right Preview -->
+                        <div class="video-card side-card" id="nextCard">
+                            <div class="video-wrapper">
+                                <video id="nextVideo" muted playsinline></video>
+                                <div class="card-overlay"></div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- Pagination -->
+                    <div class="pagination-indicators" id="paginationIndicators"></div>
+
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+
+
+
+
+
+
+
+    
+            <!-- BRANDS SECTION -->
+        <section class="section-brands-section" id="brands">
+            <div class="container-section">
+                <div class="section-title-center">
+                    <span class="eyebrow-tag center">TRUSTED PARTNERSHIPS</span>
+                    <h2 class="sub-heading">BRANDS I'VE WORKED WITH</h2>
+                </div>
+                
+                <div class="brands-carousel-wrapper" id="brands-carousel">
+                    <div class="brands-track" id="brands-track">
+                        <div class="brand-logo-card"><span>RedLigth therapy belt
+
+                        </span></div>
+                        <div class="brand-logo-card"><span>Goda</span></div>
+                        <div class="brand-logo-card"><span>Primal Remedies</span></div>
+                        <div class="brand-logo-card"><span>Soursop</span></div>
+                        <div class="brand-logo-card"><span>Ryze</span></div>
+                        <div class="brand-logo-card"><span>Prime Honey pack</span></div>
+                        <div class="brand-logo-card"><span>Mellonest</span></div>
+
+                        <div class="brand-logo-card"><span>Liposhorts</span></div>
+                        <div class="brand-logo-card"><span>Velaxen</span></div>
+                        <div class="brand-logo-card"><span>HeldHonest</span></div>
+                        <div class="brand-logo-card"><span>Nuflos lymphatic drainage</span></div>
+                        <!-- Duplicate set for seamless looping -->
+                        <div class="brand-logo-card"><span>RedLigth therapy belt</span>
+                        </div>
+                        <div class="brand-logo-card"><span>Goda</span></div>
+                        <div class="brand-logo-card"><span>Primal RemediesL</span></div>
+                        <div class="brand-logo-card"><span>Soursop</span></div>
+
+
+                        <div class="brand-logo-card"><span>Ryze</span></div>
+                        <div class="brand-logo-card"><span>Prime Honey pack</span></div>
+                        <div class="brand-logo-card"><span>Mellonest</span></div>
+
+                        <div class="brand-logo-card"><span>Liposhorts</span></div>
+                        <div class="brand-logo-card"><span>Velaxen</span></div>
+                        <div class="brand-logo-card"><span>HeldHonest</span></div>
+                        <div class="brand-logo-card"><span>Nuflos lymphatic drainage</span></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+       <!--Clients Side-->
+<section class="client-side" id="clients">
+
+    <div class="section-container">
+    
+    <div class="header-top">Behind the lens</div>
+    <div class="header-flex">
+      <div class="title-group">
+        <h2>Clients & Collaborators</h2>
+      </div>
+      <p class="sub-text">
+        Founders, creators and brands who trust me with their stories.
+      </p>
+    </div>
+
+    <div class="cards-grid">
+
+      <div class="client-card">
+        <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=500" alt="Arian Ghotbi" class="card-img">
+        <div class="card-overlay"></div>
+        <div class="card-info">
+          <div class="card-name">Arian Ghotbi</div>
+          <div class="card-role">Founder & Creative Director</div>
+        </div>
+      </div>
+
+      <div class="client-card">
+        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=500" alt="Max Medyk" class="card-img">
+        <div class="card-overlay"></div>
+        <div class="card-info">
+          <div class="card-name">Max Medyk</div>
+          <div class="card-role">Youtuber & Creator</div>
+        </div>
+      </div>
+
+      <div class="client-card">
+        <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=500" alt="Raagulan Pathy" class="card-img">
+        <div class="card-overlay"></div>
+        <div class="card-info">
+          <div class="card-name">Raagulan Pathy</div>
+          <div class="card-role">Entrepreneur & Investor</div>
+        </div>
+      </div>
+
+      <div class="client-card">
+        <img src="https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?q=80&w=500" alt="Daantje Goedhart" class="card-img">
+        <div class="card-overlay"></div>
+        <div class="card-info">
+          <div class="card-name">Daantje Goedhart</div>
+          <div class="card-role">Content Creator</div>
+        </div>
+      </div>
+
+      <div class="client-card">
+        <img src="https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?q=80&w=500" alt="Tony Matusiak" class="card-img">
+        <div class="card-overlay"></div>
+        <div class="card-info">
+          <div class="card-name">Tony Matusiak</div>
+          <div class="card-role">Founder & Speaker</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Testimonials Section -->
+<section id="testimonials" class="tm-testimonials-section">
+  <div class="tm-section-container">
+    
+    <!-- Top Header -->
+    <div class="tm-header-sub">In their words</div>
+    <div class="tm-header-main">
+      <div class="tm-title-group">
+        <h2>Testimonials</h2>
+      </div>
+      <p class="tm-header-description">
+        Hear directly from the people I've edited for.
+      </p>
+    </div>
+
+    <!-- Cards Grid -->
+    <div class="tm-cards-grid">
+
+      <!-- Card 1 -->
+      <div class="tm-card" onclick="tmOpenVideo('video1.mp4')">
+        <video class="tm-card-video" muted loop playsinline preload="metadata">
+          <source src="ugc/4.mp4" type="video/mp4">
+        </video>
+        <div class="tm-card-overlay"></div>
+        <div class="tm-play-btn"></div>
+        <div class="tm-card-info">
+          <div class="tm-card-name">Max Medyk</div>
+          <div class="tm-card-role">Youtuber & Creator</div>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="tm-card" onclick="tmOpenVideo('video2.mp4')">
+        <video class="tm-card-video" muted loop playsinline preload="metadata">
+          <source src="video2.mp4" type="video/mp4">
+        </video>
+        <div class="tm-card-overlay"></div>
+        <div class="tm-play-btn"></div>
+        <div class="tm-card-info">
+          <div class="tm-card-name">Niklas Lang</div>
+          <div class="tm-card-role">Agency Owner</div>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="tm-card" onclick="tmOpenVideo('video3.mp4')">
+        <video class="tm-card-video" muted loop playsinline preload="metadata">
+          <source src="video3.mp4" type="video/mp4">
+        </video>
+        <div class="tm-card-overlay"></div>
+        <div class="tm-play-btn"></div>
+        <div class="tm-card-info">
+          <div class="tm-card-name">Ronald Bernath</div>
+          <div class="tm-card-role">Client</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Video Popup Modal -->
+  <div class="tm-modal" id="tmVideoModal">
+    <span class="tm-close-btn" onclick="tmCloseVideo()">&times;</span>
+    <div class="tm-modal-content">
+      <video id="tmVideoPlayer" controls playsinline></video>
+    </div>
+  </div>
+</section>
+    
+<!--  <section id="text-reviews" class="rt-reviews-section">  -->
+  <div class="rt-container">
+    <div class="rt-cards-grid">
+
+      <div class="rt-card">
+        <div class="rt-quote-icon">
+          <svg width="28" height="24" viewBox="0 0 24 24" fill="#ff9900">
+            <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
+          </svg>
+        </div>
+
+        <div class="rt-rating-row">
+          <div class="rt-stars">★★★★★</div>
+          <span class="rt-date">June 2026</span>
+        </div>
+
+        <p class="rt-quote-text">
+          “Franz is a very talented, creative and reliable video editor. He has great motion design and editing skills and always goes above and beyond to deliver great high quality videos. I can highly recommend working together with Dareal if you're looking for a top notch video editor that can basically do everything when it comes to video editing.”
+        </p>
+
+        <div class="rt-author-info">
+          <div class="rt-author-name">Niklas Lang</div>
+          <div class="rt-author-role">AGENCY OWNER &bull; VIDEO EDITING</div>
+        </div>
+      </div>
+
+      <div class="rt-card">
+        <div class="rt-quote-icon">
+          <svg width="28" height="24" viewBox="0 0 24 24" fill="#ff9900">
+            <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
+          </svg>
+        </div>
+
+        <div class="rt-rating-row">
+          <div class="rt-stars">★★★★★</div>
+          <span class="rt-date">May 2024</span>
+        </div>
+
+        <p class="rt-quote-text">
+          “Highly recommend Dareal's editing services. He's been a pleasure to work with and entrust my client's videos to make even better! Speed and attention to detail is key and Dareal doesn't fall short of either. Awesome work!”
+        </p>
+
+        <div class="rt-author-info">
+          <div class="rt-author-name">Seva Mozhaev</div>
+          <div class="rt-author-role">1B+ VIEWS &bull; 1.6M+ FOLLOWERS</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="contact-section" id="contact">
+  <div class="contact-container">
+    
+    <!-- LEFT SIDE: Text & Interactive Contact Cards -->
+    <div class="contact-info">
+      <h1 class="main-title">
+        Let's Make Your Next Video <span class="highlight">Stand Out.</span>
+      </h1>
+      <p class="sub-title">
+        Have a project in mind? Let's turn your ideas into content that people remember.
+      </p>
+
+      <!-- Contact Boxes -->
+      <div class="contact-cards">
+        <a href="mailto:hello@example.com" class="contact-card" target="_blank">
+          <div class="card-details">
+            <span class="card-label">Email</span>
+            <span class="card-value">hello@example.com</span>
+          </div>
+          <span class="arrow-icon">&nearr;</span>
+        </a>
+
+        <a href="https://instagram.com/username" class="contact-card" target="_blank">
+          <div class="card-details">
+            <span class="card-label">Instagram</span>
+            <span class="card-value">@username</span>
+          </div>
+          <span class="arrow-icon">&nearr;</span>
+        </a>
+
+        <a href="https://www.tiktok.com/@sonfranzivan?is_from_webapp=1&sender_device=pc" class="contact-card" target="_blank">
+          <div class="card-details">
+            <span class="card-label">TikTok</span>
+            <span class="card-value">sonfranzivan</span>
+          </div>
+          <span class="arrow-icon">&nearr;</span>
+        </a>
+
+        <a href="https://discord.com/invite/f3tvaTjNts" class="contact-card" target="_blank">
+          <div class="card-details">
+            <span class="card-label">Discord</span>
+            <span class="card-value">Join Server</span>
+            
+          </div>
+          <span class="arrow-icon">&nearr;</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- RIGHT SIDE: Submission Form -->
+    <div class="contact-form-wrapper">
+      <h2>Let's Work Together</h2>
+      
+      <!-- Replace YOUR_FORMSPREE_ID with your Formspree Endpoint ID -->
+      <form id="contactForm" action="https://formspree.io/f/YOUR_FORMSPREE_ID" method="POST">
+        <div class="input-group">
+          <input type="text" name="full_name" placeholder="Full Name" required />
+        </div>
+
+        <div class="input-group">
+          <input type="email" name="email" placeholder="Email Address" required />
+        </div>
+
+    <!--   <div class="form-row">  --> 
+          <div class="input-group">
+            <select name="project_type" required>
+              <option value="" disabled selected>Project Type</option>
+              <option value="Video Editing">UGC</option>
+              <option value="Motion Graphics">AI VIDEOS</option>
+              <option value="Thumbnail Design">VSL EDITS</option>
+              <option value="Other">WINNING ADS</option>
+            </select>
+          </div>
+
+
+
+
+
+
+          
+
+
+    
+        <!--<div class="input-group">
+            <select name="budget_range" required>
+              <option value="" disabled selected>Budget Range</option>
+              <option value="$100 - $300">$100 - $300</option>
+              <option value="$300 - $500">$300 - $500</option>
+              <option value="$500 - $1000">$500 - $1000</option>
+              <option value="$1000+">$1000+</option>
+            </select>
+          </div> -->
+
+    <!--    </div>          --> 
+
+        <div class="input-group">
+          <textarea name="message" rows="4" placeholder="Project Description (Tell me about your vision)" required></textarea>
+        </div>
+
+        <button type="submit" class="submit-btn" id="submitBtn">Submit Request</button>
+        <p id="formStatus" class="form-status"></p>
+      </form>
+    </div>
+
+  </div>
+</section>
+
+            <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-top">
+                <a href="index.html" class="nav-logo">
+             <!--       <span class="logo-icon">▶</span>  -->
+                    <span class="logo-text">FRANZ IVAN <span>WORKS</span></span>
+                </a>
+
+                <ul class="footer-links">
+                    <li><a href="#works">WORKS</a></li>
+                    <li><a href="#brands">BRANDS</a></li>
+                    <li><a href="#clients">CLIENTS</a></li>
+                    <li><a href="#testimonials">TESTIMONIALS</a></li>
+                    <li><a href="#contact">BOOK NOW</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 FRANZ IVAN WORKS. All Rights Reserved. Crafted with passion.</p>
+                <button class="back-to-top" id="back-to-top" aria-label="Back to top">
+             <!--      <span>&#8593;</span> TOP  -->
+                </button>
+            </div>
+        </div>
+    </footer>
+
+
+
+    
+
+<script src="js/script.js"></script>
+<script src="js/indicator.js"></script>
+
+</body>
+</html>
