@@ -177,7 +177,7 @@ const videos = {
 
     ],
     ai: [
-        "assets/video/ugc/VID AD 1.mp4",
+        "assets/video/AIVideo/a1.mp4",
         "assets/video/ugc/VID AD 2.mp4",
         "assets/video/ugc/VID AD 3.mp4"
     ],
