@@ -178,8 +178,8 @@ const videos = {
     ],
     ai: [
         "assets/video/AIVideo/a1.mp4",
-        "assets/video/ugc/VID AD 2.mp4",
-        "assets/video/ugc/VID AD 3.mp4"
+        "assets/video/AIVideo/b2.mp4"
+
     ],
     vsl: [
         "assets/video/ugc/VID AD 4.mp4",
