@@ -3,12 +3,12 @@
 // Data Array matching your EXACT VS Code folder
 const videos = {
     ugc: [
-        "assets/video/UGC/a.mp4",
-        "assets/video/UGC/b.mp4",
         "assets/video/UGC/c.mp4",
+        "assets/video/UGC/b.mp4",
         "assets/video/UGC/d.mp4",
         "assets/video/UGC/e.mp4",
-        "assets/video/UGC/f.mp4",
+        "assets/video/UGC/f.mp4"
+        
         
     ],
     ai: [
