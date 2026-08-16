@@ -182,7 +182,7 @@ const videos = {
 
     ],
     vsl: [
-        "assets/video/ugc/VID AD 4.mp4",
+        "assets/video/VSLEDIT/0815.mp4",
         "assets/video/ugc/VID AD 5.mp4",
         "assets/video/ugc/VIDEO 4.mp4"
     ],
