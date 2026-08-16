@@ -21,12 +21,19 @@
 
 
 .section-brands-section {
-  margin-top: 200px;
+  margin-top: 100px;
   background-color: var(--bg-black);
   height: 320px;
   scroll-margin-top: 110px;
 
 }
+
+
+
+
+
+
+
 
 .section-title-center {
   margin-bottom: 30px;
@@ -555,7 +562,7 @@ form {
 .input-group input:focus,
 .input-group select:focus,
 .input-group textarea:focus {
-  border-color: #f3c649;
+  border-color: #ff6600;
 }
 
 .input-group select {
