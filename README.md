@@ -123,7 +123,175 @@ sa footer
 
 
 
-https://johnleonardmanadia.github.io/Client_Portfolio_Website/
 
 
 transform: translateY(-50px);
+
+
+
+
+
+
+            <!-- BRANDS SECTION -->
+        <section class="section-brands-section" id="brands">
+            <div class="container-section">
+                <div class="section-title-center">
+                    <span class="eyebrow-tag center">TRUSTED PARTNERSHIPS</span>
+                    <h2 class="sub-heading">BRANDS I'VE WORKED WITH</h2>
+                </div>
+                
+                <div class="brands-carousel-wrapper" id="brands-carousel">
+                    <div class="brands-track" id="brands-track">
+                        <div class="brand-logo-card"><span>RedLigth therapy belt
+
+                        </span></div>
+                        <div class="brand-logo-card"><span>Goda</span></div>
+                        <div class="brand-logo-card"><span>Primal Remedies</span></div>
+                        <div class="brand-logo-card"><span>Soursop</span></div>
+                        <div class="brand-logo-card"><span>Ryze</span></div>
+                        <div class="brand-logo-card"><span>Prime Honey pack</span></div>
+                        <div class="brand-logo-card"><span>Mellonest</span></div>
+
+                        <div class="brand-logo-card"><span>Liposhorts</span></div>
+                        <div class="brand-logo-card"><span>Velaxen</span></div>
+                        <div class="brand-logo-card"><span>HeldHonest</span></div>
+                        <div class="brand-logo-card"><span>Nuflos lymphatic drainage</span></div>
+                        <!-- Duplicate set for seamless looping -->
+                        <div class="brand-logo-card"><span>RedLigth therapy belt</span>
+                        </div>
+                        <div class="brand-logo-card"><span>Goda</span></div>
+                        <div class="brand-logo-card"><span>Primal RemediesL</span></div>
+                        <div class="brand-logo-card"><span>Soursop</span></div>
+
+
+                        <div class="brand-logo-card"><span>Ryze</span></div>
+                        <div class="brand-logo-card"><span>Prime Honey pack</span></div>
+                        <div class="brand-logo-card"><span>Mellonest</span></div>
+
+                        <div class="brand-logo-card"><span>Liposhorts</span></div>
+                        <div class="brand-logo-card"><span>Velaxen</span></div>
+                        <div class="brand-logo-card"><span>HeldHonest</span></div>
+                        <div class="brand-logo-card"><span>Nuflos lymphatic drainage</span></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- BRANDS SECTION -->
+<section class="section-brands-section" id="brands">
+    <div class="container-section">
+        <div class="section-title-center">
+            <span class="eyebrow-tag center">TRUSTED PARTNERSHIPS</span>
+            <h2 class="sub-heading">BRANDS I'VE WORKED WITH</h2>
+        </div>
+
+        <div class="brands-carousel-wrapper" id="brands-carousel">
+            <div class="brands-track" id="brands-track">
+
+                <div class="brand-logo-card">
+                    <img src="assets/logo/red-light-belt.webp" alt="RedLight Therapy Belt">
+                    <span class="brand-name">RedLight Therapy Belt</span>
+                </div>
+                <div class="brand-logo-card">
+                    <img src="assets/logo/goda.webp" alt="Goda">
+                    <span class="brand-name">Goda</span>
+                </div>
+                <div class="brand-logo-card">
+                    <img src="assets/logos/primal-remedies.png" alt="Primal Remedies">
+                    <span class="brand-name">Primal Remedies</span>
+                </div>
+                <div class="brand-logo-card">
+                    <img src="assets/logos/soursop.png" alt="Soursop">
+                    <span class="brand-name">Soursop</span>
+                </div>
+                <div class="brand-logo-card">
+                    <img src="assets/logos/ryze.png" alt="Ryze">
+                    <span class="brand-name">Ryze</span>
+                </div>
+                <div class="brand-logo-card">
+                    <img src="assets/logos/prime-honey-pack.png" alt="Prime Honey Pack">
+                    <span class="brand-name">Prime Honey Pack</span>
+                </div>
+                <div class="brand-logo-card">
+                    <img src="assets/logos/mellonest.png" alt="Mellonest">
+                    <span class="brand-name">Mellonest</span>
+                </div>
+                <div class="brand-logo-card">
+                    <img src="assets/logos/liposhorts.png" alt="Liposhorts">
+                    <span class="brand-name">Liposhorts</span>
+                </div>
+                <div class="brand-logo-card">
+                    <img src="assets/logos/velaxen.png" alt="Velaxen">
+                    <span class="brand-name">Velaxen</span>
+                </div>
+                <div class="brand-logo-card">
+                    <img src="assets/logos/heldhonest.png" alt="HeldHonest">
+                    <span class="brand-name">HeldHonest</span>
+                </div>
+                <div class="brand-logo-card">
+                    <img src="assets/logos/nuflos.png" alt="Nuflos Lymphatic Drainage">
+                    <span class="brand-name">Nuflos Lymphatic Drainage</span>
+                </div>
+
+                <!-- Duplicate set for seamless looping -->
+                <div class="brand-logo-card">
+                    <img src="assets/logos/redlight-therapy.png" alt="RedLight Therapy Belt">
+                    <span class="brand-name">RedLight Therapy Belt</span>
+                </div>
+                <div class="brand-logo-card">
+                    <img src="assets/logos/goda.png" alt="Goda">
+                    <span class="brand-name">Goda</span>
+                </div>
+                <div class="brand-logo-card">
+                    <img src="assets/logos/primal-remedies.png" alt="Primal Remedies">
+                    <span class="brand-name">Primal Remedies</span>
+                </div>
+                <div class="brand-logo-card">
+                    <img src="assets/logos/soursop.png" alt="Soursop">
+                    <span class="brand-name">Soursop</span>
+                </div>
+                <div class="brand-logo-card">
+                    <img src="assets/logos/ryze.png" alt="Ryze">
+                    <span class="brand-name">Ryze</span>
+                </div>
+                <div class="brand-logo-card">
+                    <img src="assets/logos/prime-honey-pack.png" alt="Prime Honey Pack">
+                    <span class="brand-name">Prime Honey Pack</span>
+                </div>
+                <div class="brand-logo-card">
+                    <img src="assets/logos/mellonest.png" alt="Mellonest">
+                    <span class="brand-name">Mellonest</span>
+                </div>
+                <div class="brand-logo-card">
+                    <img src="assets/logos/liposhorts.png" alt="Liposhorts">
+                    <span class="brand-name">Liposhorts</span>
+                </div>
+                <div class="brand-logo-card">
+                    <img src="assets/logos/velaxen.png" alt="Velaxen">
+                    <span class="brand-name">Velaxen</span>
+                </div>
+                <div class="brand-logo-card">
+                    <img src="assets/logos/heldhonest.png" alt="HeldHonest">
+                    <span class="brand-name">HeldHonest</span>
+                </div>
+                <div class="brand-logo-card">
+                    <img src="assets/logos/nuflos.png" alt="Nuflos Lymphatic Drainage">
+                    <span class="brand-name">Nuflos Lymphatic Drainage</span>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+

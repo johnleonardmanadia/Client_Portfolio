@@ -20,28 +20,20 @@
 
 
 
-
-
 .section-brands-section {
-
-  margin-top: 300px;
+  margin-top: 200px;
   background-color: var(--bg-black);
-  height: 300px;
+  height: 320px;
   scroll-margin-top: 110px;
+
 }
 
 .section-title-center {
   margin-bottom: 30px;
   display: flex;
-
   flex-direction: column;
   align-items: center;
 }
-
-
-
-
-
 
 .section-title-center span {
   margin-top: 40px;
@@ -52,7 +44,6 @@
   font-family: var(--font-heading);
   color: var(--gradient-accent);
   font-weight: 800;
-
   font-size: 2.3rem;
   margin-bottom: 25px;
 }
@@ -104,28 +95,58 @@
   }
 }
 
+/* Brand card: logo on top, name below, blends into section bg */
 .brand-logo-card {
-  background: var(--bg-card);
-  border: 1px solid var(--border-color);
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.08);
   border-radius: var(--radius-md);
-  padding: 18px 36px;
-  color: var(--text-muted); /**/
-  font-family: var(--font-heading);
-  font-weight: 800;
-  font-size: 1rem;
-  letter-spacing: 0.1em;
+  padding: 16px 28px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+  min-width: 160px;
+  height: 110px;
+
   transition:
     border-color 0.3s ease,
-    color 0.3s ease;
+    background-color 0.3s ease;
 }
 
 .brand-logo-card:hover {
   border-color: #ff6600;
-  color: var(--text-main);
+  background: rgba(255, 255, 255, 0.03);
 }
 
 .brand-logo-card img {
-  width: 40px;
+  max-width: 100px;
+  max-height: 36px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  filter: grayscale(100%) brightness(1.8) opacity(0.6);
+  transition: filter 0.3s ease;
+}
+
+.brand-logo-card:hover img {
+  filter: grayscale(0%) brightness(1) opacity(1);
+}
+
+.brand-name {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 0.8rem;
+  letter-spacing: 0.05em;
+  color: var(--text-muted);
+  text-align: center;
+  transition: color 0.3s ease;
+}
+
+.brand-logo-card:hover .brand-name {
+  color: var(--text-main);
 }
 
 /* ============================================================
@@ -144,8 +165,18 @@
   }
 
   .brand-logo-card {
-    padding: 14px 26px;
-    font-size: 0.9rem;
+    padding: 14px 22px;
+    height: 100px;
+    min-width: 140px;
+  }
+
+  .brand-logo-card img {
+    max-width: 90px;
+    max-height: 32px;
+  }
+
+  .brand-name {
+    font-size: 0.75rem;
   }
 }
 
@@ -182,8 +213,18 @@
   }
 
   .brand-logo-card {
-    padding: 12px 20px;
-    font-size: 0.8rem;
+    padding: 12px 18px;
+    height: 90px;
+    min-width: 120px;
+  }
+
+  .brand-logo-card img {
+    max-width: 76px;
+    max-height: 28px;
+  }
+
+  .brand-name {
+    font-size: 0.7rem;
   }
 }
 
@@ -201,11 +242,20 @@
   }
 
   .brand-logo-card {
-    padding: 10px 16px;
-    font-size: 0.75rem;
+    padding: 10px 14px;
+    height: 84px;
+    min-width: 105px;
+  }
+
+  .brand-logo-card img {
+    max-width: 64px;
+    max-height: 24px;
+  }
+
+  .brand-name {
+    font-size: 0.65rem;
   }
 }
-
 
 
 
@@ -1710,4 +1760,21 @@ body {
   .mobile-book-link {
     color: #ff9900;
   }
+}
+
+
+.drive-btn {
+  display: inline-block;
+  margin-top: 30px;
+  padding: 10px 20px;
+  background: linear-gradient(135deg, #ff6600 0%, #ff3300 100%);  
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+}
+
+.drive-btn:hover {
+  background-color: #1557b0; /* Pag tinapatan ng cursor */
 }
