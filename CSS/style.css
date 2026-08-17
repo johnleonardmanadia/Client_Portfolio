@@ -268,7 +268,9 @@
 
 /* ============================================================
    CLIENTS SIDE
-============================================================ */
+============================================================
+
+
 
 .client-side {
   padding: 60px;
@@ -281,12 +283,12 @@
   margin-top: 90px;
 }
 
-/* Header Styling */
+/* Header Styling
 .header-top {
   color: var(--gradient-accent);
   font-size: 18px;
   margin-bottom: 8px;
-  color: #ff5500; /* Vibrant Orange accent */
+  color: #ff5500; /* Vibrant Orange accent 
 }
 
 .header-flex {
@@ -307,7 +309,9 @@
   font-weight: 700;
 }
 
-/* Green line indicator below title */
+*/
+
+/* 
 .title-group::after {
   content: "";
   display: block;
@@ -325,14 +329,16 @@
   line-height: 1.5;
 }
 
-/* Grid Layout */
+/* Grid Layout 
 .cards-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 20px;
 }
 
-/* Card Item */
+ */
+
+/* Card Item 
 .client-card {
   position: relative;
   height: 380px;
@@ -340,13 +346,15 @@
   overflow: hidden;
   cursor: pointer;
   background-color: #161b22;
-  /* Smooth transition para sa zoom effect */
+  /* Smooth transition para sa zoom effect 
   transition:
     transform 0.4s cubic-bezier(0.25, 1, 0.5, 1),
     box-shadow 0.4s ease;
 }
 
-/* Card Background Image */
+*/
+
+/* Card Background Image 
 .card-img {
   width: 100%;
   height: 100%;
@@ -354,7 +362,9 @@
   transition: transform 0.4s ease;
 }
 
-/* Dark Overlay na magiging mas madilim kapag i-hover */
+*/
+
+/* Dark Overlay na magiging mas madilim kapag i-hover 
 .card-overlay {
   position: absolute;
   top: 0;
@@ -370,7 +380,7 @@
   transition: background 0.3s ease;
 }
 
-/* Text details inside the card */
+/* Text details inside the card 
 .card-info {
   position: absolute;
   bottom: 20px;
@@ -380,7 +390,7 @@
 }
 
 .card-name {
-  color: #ff9900; /* Color ng Name */
+  color: #ff9900; 
   font-size: 18px;
   font-weight: 700;
   margin-bottom: 6px;
@@ -394,21 +404,25 @@
   text-transform: uppercase;
 }
 
-/* --- HOVER EFFECTS --- */
+*/
 
-/* 1. Lumalaki ang mismong card */
+/* --- HOVER EFFECTS --- 
+
+/* 1. Lumalaki ang mismong card 
 .client-card:hover {
   transform: scale(1.05);
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.6);
   z-index: 10;
 }
 
-/* 2. Nag-i-zoom nang bahagya ang image sa loob */
+ 2. Nag-i-zoom nang bahagya ang image sa loob 
 .client-card:hover .card-img {
   transform: scale(1.08);
 }
 
-/* 3. Lumalabas/Dumidilim ang background (Black Overlay) */
+*/
+
+/* 3. Lumalabas/Dumidilim ang background (Black Overlay) 
 .client-card:hover .card-overlay {
   background: linear-gradient(
     to top,
@@ -417,6 +431,12 @@
     rgba(0, 0, 0, 0.2) 100%
   );
 }
+
+*/
+
+
+
+
 
 /* ==================================================
    CTA & CONTACT
@@ -1142,6 +1162,7 @@ body {
 
 /* Section Wrapper */
 .tm-testimonials-section {
+
   width: 100%;
   padding: 80px 20px;
   background-color: transparent;
@@ -1201,14 +1222,17 @@ body {
   margin: 0;
 }
 
-/* Grid Layout */
+
+
+
+/* Grid Layout 
 .tm-cards-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 24px;
 }
 
-/* Testimonial Card */
+/* Testimonial Card 
 .tm-card {
   position: relative;
   height: 340px;
@@ -1221,7 +1245,7 @@ body {
     box-shadow 0.3s ease;
 }
 
-/* Direct Video Element inside Card */
+/* Direct Video Element inside Card 
 .tm-card-video {
   width: 100%;
   height: 100%;
@@ -1242,10 +1266,13 @@ body {
     rgba(0, 0, 0, 0) 100%
   );
   transition: background 0.3s ease;
-  pointer-events: none; /* Binibigyang-daan ang hover sa video element sa ilalim */
+  pointer-events: none; /* Binibigyang-daan ang hover sa video element sa ilalim 
 }
 
-/* Green Play Button sa Gitna */
+*/
+
+
+/*  Play Button sa Gitna 
 .tm-play-btn {
   position: absolute;
   top: 50%;
@@ -1277,7 +1304,10 @@ body {
   margin-left: 3px;
 }
 
-/* Card Details sa Ibabang Kaliwa */
+*/
+
+
+/* Card Details sa Ibabang Kaliwa 
 .tm-card-info {
   position: absolute;
   bottom: 20px;
@@ -1302,7 +1332,7 @@ body {
   text-transform: uppercase;
 }
 
-/* Hover Effects */
+/* Hover Effects 
 .tm-card:hover {
   transform: translateY(-6px);
   box-shadow: 0 12px 25px rgba(0, 0, 0, 0.5);
@@ -1317,7 +1347,10 @@ body {
   background-color: #ff2a2a;
 }
 
-/* Video Popup Modal */
+*/
+
+
+/* Video Popup Modal
 .tm-modal {
   display: none;
   position: fixed;
@@ -1357,7 +1390,15 @@ body {
   z-index: 10000;
 }
 
-/* Section Wrapper   TEstimoy 2 */
+
+ */
+
+
+
+
+/* Section Wrapper   TEstimoy 2 
+
+*/
 .rt-reviews-section {
   width: 100%;
   padding: 60px 20px;
