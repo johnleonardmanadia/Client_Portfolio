@@ -1,5 +1,7 @@
 
 
+
+
 /* ============================================================
    BRANDS CAROUSEL
 ============================================================ */
@@ -1550,8 +1552,7 @@ body {
     height: 100%;
 }
 
-.video-wrapper video,
-.video-wrapper img {
+.video-wrapper video {
     width: 100%;
     height: 100%;
     object-fit: cover;

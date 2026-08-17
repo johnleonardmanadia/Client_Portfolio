@@ -1,5 +1,7 @@
 
 
+
+
 //Mobile Nav Toggle (Hamburger Menu)
 document.addEventListener("DOMContentLoaded", () => {
   const navToggle = document.getElementById("navToggle");
@@ -165,29 +167,29 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
-// Data Array: each project = picture (thumbnail) + its own Google Drive link
-// PAALALA: Palitan mo yung "thumb" ng path ng picture mo, at yung "link" ng
-// tunay na Google Drive link ng bawat video/project.
-const projects = {
+// Data Array matching your EXACT VS Code folder
+const videos = {
     ugc: [
-        { thumb: "assets/pics/a1.png", link: "https://drive.google.com/file/d/1ZYnWuDvd5JPBV_l7opI5jQGpcVI9FLtw/view?usp=drive_link" },
-        { thumb: "assets/images/UGC/b.jpg", link: "https://drive.google.com/PALITAN_LINK_2" },
-        { thumb: "assets/images/UGC/d.jpg", link: "https://drive.google.com/PALITAN_LINK_3" },
-        { thumb: "assets/images/UGC/e.jpg", link: "https://drive.google.com/PALITAN_LINK_4" },
-        { thumb: "assets/images/UGC/f.jpg", link: "https://drive.google.com/PALITAN_LINK_5" }
+        "assets/video/UGC/c.mp4",
+        "assets/video/UGC/b.mp4",
+        "assets/video/UGC/d.mp4",
+        "assets/video/UGC/e.mp4",
+        "assets/video/UGC/f.mp4"
+
     ],
     ai: [
-        { thumb: "assets/images/AIVideo/a1.jpg", link: "https://drive.google.com/PALITAN_LINK_6" },
-        { thumb: "assets/images/AIVideo/b2.jpg", link: "https://drive.google.com/PALITAN_LINK_7" }
+        "assets/video/AIVideo/a1.mp4",
+        "assets/video/AIVideo/b2.mp4"
+
     ],
     vsl: [
-        { thumb: "assets/images/VSLEDIT/0815.jpg", link: "https://drive.google.com/PALITAN_LINK_8" },
-        { thumb: "assets/images/ugc/VID_AD_5.jpg", link: "https://drive.google.com/PALITAN_LINK_9" },
-        { thumb: "assets/images/ugc/VIDEO_4.jpg", link: "https://drive.google.com/PALITAN_LINK_10" }
+        "assets/video/VSLEDIT/0815.mp4",
+        "assets/video/ugc/VID AD 5.mp4",
+        "assets/video/ugc/VIDEO 4.mp4"
     ],
     winningAds: [
-        { thumb: "assets/images/ugc/4.jpg", link: "https://drive.google.com/PALITAN_LINK_11" },
-        { thumb: "assets/images/ugc/5.jpg", link: "https://drive.google.com/PALITAN_LINK_12" }
+        "assets/video/ugc/4.mp4",
+        "assets/video/ugc/5.mp4"
     ]
 };
 
@@ -195,9 +197,9 @@ let currentCategory = 'ugc';
 let currentIndex = 0;
 
 // DOM Elements
-const mainImg = document.getElementById('mainImg');
-const prevImg = document.getElementById('prevImg');
-const nextImg = document.getElementById('nextImg');
+const mainVideo = document.getElementById('mainVideo');
+const prevVideo = document.getElementById('prevVideo');
+const nextVideo = document.getElementById('nextVideo');
 
 const prevCard = document.getElementById('prevCard');
 const nextCard = document.getElementById('nextCard');
@@ -209,25 +211,31 @@ const playOverlay = document.getElementById('playOverlay');
 const categoryButtons = document.querySelectorAll('.tab-btn');
 const paginationContainer = document.getElementById('paginationIndicators');
 
-// Set image sources + kung saang Gdrive link pupunta ang main image
+// Set video sources safely
 function updateVideoSources() {
-    const list = projects[currentCategory];
+    const list = videos[currentCategory];
     if (!list || list.length === 0) return;
 
     const total = list.length;
-
+    
     // Boundary check
     currentIndex = (currentIndex + total) % total;
 
     const prevIndex = (currentIndex - 1 + total) % total;
     const nextIndex = (currentIndex + 1) % total;
 
-    // Set Main Image
-    mainImg.src = list[currentIndex].thumb;
+    // Set Main Video
+    mainVideo.pause();
+    mainVideo.src = list[currentIndex];
+    mainVideo.load();
+    playOverlay.classList.remove('hidden');
 
     // Set Previews
-    prevImg.src = list[prevIndex].thumb;
-    nextImg.src = list[nextIndex].thumb;
+    prevVideo.src = list[prevIndex];
+    prevVideo.load();
+
+    nextVideo.src = list[nextIndex];
+    nextVideo.load();
 
     renderPagination();
 }
@@ -259,15 +267,19 @@ function goPrev() {
     updateVideoSources();
 }
 
-// Pag pinindot yung main picture, buksan sa bagong tab yung Google Drive
-// link ng kasalukuyang project (base sa currentCategory + currentIndex)
-function openProjectLink() {
-    const list = projects[currentCategory];
-    if (!list || list.length === 0) return;
-
-    const project = list[currentIndex];
-    if (project && project.link) {
-        window.open(project.link, '_blank');
+function togglePlay() {
+    if (mainVideo.paused) {
+        mainVideo.play().then(() => {
+            playOverlay.classList.add('hidden');
+        }).catch(err => {
+            console.log("Play blocked:", err);
+            mainVideo.muted = true;
+            mainVideo.play();
+            playOverlay.classList.add('hidden');
+        });
+    } else {
+        mainVideo.pause();
+        playOverlay.classList.remove('hidden');
     }
 }
 
@@ -278,8 +290,8 @@ prevBtn.onclick = goPrev;
 nextCard.onclick = goNext;
 prevCard.onclick = goPrev;
 
-playOverlay.onclick = openProjectLink;
-mainImg.onclick = openProjectLink;
+playOverlay.onclick = togglePlay;
+mainVideo.onclick = togglePlay;
 
 categoryButtons.forEach(btn => {
     btn.onclick = (e) => {

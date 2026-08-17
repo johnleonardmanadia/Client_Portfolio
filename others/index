@@ -1,6 +1,7 @@
 
 
 
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,7 +10,7 @@
     <title>FRANZ IVAN | VIDEO EDITOR</title>
   <!--  <meta property="og:image" content="https://www.angwebsite.com/profile.webp">  -->
    <link rel="icon" type="image/webp" href="assets/images/profile.webp">  
-    <link rel="stylesheet" href="CSS/style.css">
+ <!--   <link rel="stylesheet" href="CSS/style.css">  -->
 </head>
 <body>
 
@@ -131,17 +132,17 @@
                         <!-- Left Preview -->
                         <div class="video-card side-card" id="prevCard">
                             <div class="video-wrapper">
-                                <img id="prevImg" src="" alt="Previous project">
+                                <video id="prevVideo" muted playsinline></video>
                                 <div class="card-overlay"></div>
                             </div>
                         </div>
 
-                        <!-- Main Image (click -> Google Drive project link) -->
+                        <!-- Main Video -->
                         <div class="video-card main-card" id="mainCard">
                             <div class="video-wrapper">
-                                <img id="mainImg" src="" alt="Selected project">
+                                <video id="mainVideo" playsinline></video>
                                 <div class="play-overlay" id="playOverlay">
-                                    <div class="play-button">▶</div>
+                                    <div class="play-button">►</div>
                                 </div>
                             </div>
                         </div>
@@ -149,7 +150,7 @@
                         <!-- Right Preview -->
                         <div class="video-card side-card" id="nextCard">
                             <div class="video-wrapper">
-                                <img id="nextImg" src="" alt="Next project">
+                                <video id="nextVideo" muted playsinline></video>
                                 <div class="card-overlay"></div>
                             </div>
                         </div>
@@ -541,11 +542,6 @@
   </div>
 </section>
 
-
-
-
-
-
             <!-- FOOTER -->
     <footer class="footer">
         <div class="container footer-container">
@@ -577,7 +573,7 @@
 
     
 
-<script src="js/script.js"></script>
+<!--  <script src="js/script.js"></script>     --> 
 
 
 </body>
