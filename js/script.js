@@ -183,12 +183,12 @@ const videos = {
     ],
     vsl: [
         "assets/video/VSLEDIT/0815.mp4",
-        "assets/video/ugc/VID AD 5.mp4",
-        "assets/video/ugc/VIDEO 4.mp4"
+        "",
+        ""
     ],
     winningAds: [
-        "assets/video/ugc/4.mp4",
-        "assets/video/ugc/5.mp4"
+        "",
+        ""
     ]
 };
 
@@ -256,7 +256,7 @@ function renderPagination() {
 }
 
 
-/*
+
 
 // Controls
 function goNext() {
@@ -269,14 +269,15 @@ function goPrev() {
     updateVideoSources();
 }
 
+
 function togglePlay() {
     if (mainVideo.paused) {
         mainVideo.play().then(() => {
             playOverlay.classList.add('hidden');
         }).catch(err => {
-            console.log("Play blocked:", err);
+ //           console.log("Play blocked:", err);
             mainVideo.muted = true;
-            mainVideo.play();
+ //          mainVideo.play();
             playOverlay.classList.add('hidden');
         });
     } else {
@@ -285,7 +286,7 @@ function togglePlay() {
     }
 }
 
-*/
+
 
 // Event Listeners
 nextBtn.onclick = goNext;
