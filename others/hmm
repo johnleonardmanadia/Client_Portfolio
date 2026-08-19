@@ -1,7 +1,6 @@
 
 
 
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,7 +9,7 @@
     <title>FRANZ IVAN | VIDEO EDITOR</title>
   <!--  <meta property="og:image" content="https://www.angwebsite.com/profile.webp">  -->
    <link rel="icon" type="image/webp" href="assets/images/profile.webp">  
- <!--   <link rel="stylesheet" href="CSS/style.css">  -->
+    <link rel="stylesheet" href="CSS/style.css">
 </head>
 <body>
 
@@ -28,7 +27,7 @@
             <ul class="nav-links" id="navLinks">
                 <li><a href="#works" class="active">WORKS</a></li>
                 <li><a href="#brands">BRANDS</a></li>
-                <li><a href="#clients">CLIENTS</a></li>
+            <!--   <li><a href="#clients">CLIENTS</a></li>    --> 
                 <li><a href="#testimonials">TESTIMONIALS</a></li>
            <!--    <li><a href="#contact">CONTACT</a></li>  -->
                 <li class="mobile-only"><a href="#contact" class="mobile-book-link">BOOK NOW</a></li>
@@ -132,17 +131,17 @@
                         <!-- Left Preview -->
                         <div class="video-card side-card" id="prevCard">
                             <div class="video-wrapper">
-                                <video id="prevVideo" muted playsinline></video>
+                                <img id="prevImg" src="" alt="Previous project">
                                 <div class="card-overlay"></div>
                             </div>
                         </div>
 
-                        <!-- Main Video -->
+                        <!-- Main Image (click -> Google Drive project link) -->
                         <div class="video-card main-card" id="mainCard">
                             <div class="video-wrapper">
-                                <video id="mainVideo" playsinline></video>
+                                <img id="mainImg" src="" alt="Selected project">
                                 <div class="play-overlay" id="playOverlay">
-                                    <div class="play-button">►</div>
+                                    <div class="play-button">▶</div>
                                 </div>
                             </div>
                         </div>
@@ -150,7 +149,7 @@
                         <!-- Right Preview -->
                         <div class="video-card side-card" id="nextCard">
                             <div class="video-wrapper">
-                                <video id="nextVideo" muted playsinline></video>
+                                <img id="nextImg" src="" alt="Next project">
                                 <div class="card-overlay"></div>
                             </div>
                         </div>
@@ -224,11 +223,11 @@
 
 
 
-
+<!--
     
 
 
-       <!--Clients Side-->
+       Clients Side
 <section class="client-side" id="clients">
 
     <div class="section-container">
@@ -293,6 +292,11 @@
   </div>
 </section>
 
+
+
+-->
+
+
 <!-- Testimonials Section -->
 <section id="testimonials" class="tm-testimonials-section">
   <div class="tm-section-container">
@@ -308,10 +312,11 @@
       </p>
     </div>
 
-    <!-- Cards Grid -->
+    <!-- Cards Grid 
     <div class="tm-cards-grid">
 
-      <!-- Card 1 -->
+      Card 1 
+
       <div class="tm-card" onclick="tmOpenVideo('video1.mp4')">
         <video class="tm-card-video" muted loop playsinline preload="metadata">
           <source src="ugc/4.mp4" type="video/mp4">
@@ -324,7 +329,7 @@
         </div>
       </div>
 
-      <!-- Card 2 -->
+       Card 2 
       <div class="tm-card" onclick="tmOpenVideo('video2.mp4')">
         <video class="tm-card-video" muted loop playsinline preload="metadata">
           <source src="video2.mp4" type="video/mp4">
@@ -337,7 +342,7 @@
         </div>
       </div>
 
-      <!-- Card 3 -->
+       Card 3 
       <div class="tm-card" onclick="tmOpenVideo('video3.mp4')">
         <video class="tm-card-video" muted loop playsinline preload="metadata">
           <source src="video3.mp4" type="video/mp4">
@@ -353,7 +358,7 @@
     </div>
   </div>
 
-  <!-- Video Popup Modal -->
+   Video Popup Modal 
   <div class="tm-modal" id="tmVideoModal">
     <span class="tm-close-btn" onclick="tmCloseVideo()">&times;</span>
     <div class="tm-modal-content">
@@ -361,6 +366,10 @@
     </div>
   </div>
 </section>
+
+
+-->
+
     
 <!--  <section id="text-reviews" class="rt-reviews-section">  -->
   <div class="rt-container">
@@ -431,7 +440,7 @@
         <a href="aicontentpublisherfranz@gmail.com" class="contact-card" target="_blank">
           <div class="card-details">
             <span class="card-label">Email</span>
-            <span class="card-value">Aicontentpublisherfranz@gmail.com</span>
+            <span class="card-value">aicontentpublisherfranz@gmail.com</span>
           </div>
           <span class="arrow-icon">&nearr;</span>
         </a>
@@ -489,7 +498,7 @@
       <h2>Let's Work Together</h2>
       
       <!-- Replace YOUR_FORMSPREE_ID with your Formspree Endpoint ID -->
-      <form id="contactForm" action="https://formspree.io/f/YOUR_FORMSPREE_ID" method="POST">
+      <form id="contactForm" action="https://formspree.io/f/mzepallg" method="POST">
         <div class="input-group">
           <input type="text" name="full_name" placeholder="Full Name" required />
         </div>
@@ -542,6 +551,11 @@
   </div>
 </section>
 
+
+
+
+
+
             <!-- FOOTER -->
     <footer class="footer">
         <div class="container footer-container">
@@ -573,10 +587,8 @@
 
     
 
-<!--  <script src="js/script.js"></script>     --> 
+<script src="js/script.js"></script>
 
 
 </body>
 </html>
-
-
