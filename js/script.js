@@ -255,6 +255,9 @@ function renderPagination() {
     }
 }
 
+
+/*
+
 // Controls
 function goNext() {
     currentIndex++;
@@ -281,6 +284,8 @@ function togglePlay() {
         playOverlay.classList.remove('hidden');
     }
 }
+
+*/
 
 // Event Listeners
 nextBtn.onclick = goNext;
