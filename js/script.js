@@ -275,9 +275,9 @@ function togglePlay() {
         mainVideo.play().then(() => {
             playOverlay.classList.add('hidden');
         }).catch(err => {
- //           console.log("Play blocked:", err);
+            console.log("Play blocked:", err);
             mainVideo.muted = true;
- //          mainVideo.play();
+           mainVideo.play();
             playOverlay.classList.add('hidden');
         });
     } else {
