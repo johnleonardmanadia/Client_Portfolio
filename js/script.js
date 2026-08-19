@@ -173,7 +173,8 @@ const videos = {
         "assets/video/UGC/b.mp4",
         "assets/video/UGC/d.mp4",
         "assets/video/UGC/e.mp4",
-        "assets/video/UGC/f.mp4"
+        "assets/video/UGC/f.mp4",
+        "assets/video/UGC/UGC1.mp4"
 
     ],
     ai: [
