@@ -171,7 +171,7 @@ document.addEventListener("DOMContentLoaded", () => {
 const videos = {
     ugc: [
         "wqB2wht1atk",
-        "PUT_UGC_VIDEO_ID_2",
+        "BQpA85wHqv4",
         "PUT_UGC_VIDEO_ID_3",
         "PUT_UGC_VIDEO_ID_4",
         "PUT_UGC_VIDEO_ID_5",
