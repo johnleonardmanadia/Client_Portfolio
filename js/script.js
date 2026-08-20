@@ -1,6 +1,4 @@
 
-
-
 //Mobile Nav Toggle (Hamburger Menu)
 document.addEventListener("DOMContentLoaded", () => {
   const navToggle = document.getElementById("navToggle");
@@ -166,30 +164,28 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
-// Data Array matching your EXACT VS Code folder
+// Data Array — YouTube Video IDs na lang (hindi na mp4 files)
+// Paano kumuha ng ID: sa YouTube video, i-right-click > "Copy embed code"
+// Sa embed code makikita mo: src="https://www.youtube.com/embed/VIDEO_ID_DITO"
+// Kunin mo lang yung VIDEO_ID (yung parte pagkatapos ng /embed/) at ilagay dito sa baba.
 const videos = {
     ugc: [
-        "assets/video/UGC/c.mp4",
-        "assets/video/UGC/b.mp4",
-        "assets/video/UGC/d.mp4",
-        "assets/video/UGC/e.mp4",
-        "assets/video/UGC/f.mp4",
-        "assets/video/UGC/UGC1.mp4"
-
+        "wqB2wht1atk",
+        "PUT_UGC_VIDEO_ID_2",
+        "PUT_UGC_VIDEO_ID_3",
+        "PUT_UGC_VIDEO_ID_4",
+        "PUT_UGC_VIDEO_ID_5",
+        "PUT_UGC_VIDEO_ID_6"
     ],
     ai: [
-        "assets/video/AIVideo/a1.mp4",
-        "assets/video/AIVideo/b2.mp4"
-
+        "PUT_AI_VIDEO_ID_1",
+        "PUT_AI_VIDEO_ID_2"
     ],
     vsl: [
-        "assets/video/VSLEDIT/0815.mp4",
-        "",
-        ""
+        "PUT_VSL_VIDEO_ID_1"
     ],
     winningAds: [
-        "",
-        ""
+        "PUT_WINNINGADS_VIDEO_ID_1"
     ]
 };
 
@@ -197,19 +193,50 @@ let currentCategory = 'ugc';
 let currentIndex = 0;
 
 // DOM Elements
-const mainVideo = document.getElementById('mainVideo');
-const prevVideo = document.getElementById('prevVideo');
-const nextVideo = document.getElementById('nextVideo');
+const mainVideoWrapper = document.getElementById('mainVideoWrapper');
+const mainThumb = document.getElementById('mainThumb');
+const prevThumb = document.getElementById('prevThumb');
+const nextThumb = document.getElementById('nextThumb');
 
 const prevCard = document.getElementById('prevCard');
 const nextCard = document.getElementById('nextCard');
 
 const prevBtn = document.getElementById('prevBtn');
 const nextBtn = document.getElementById('nextBtn');
-const playOverlay = document.getElementById('playOverlay');
 
 const categoryButtons = document.querySelectorAll('.tab-btn');
 const paginationContainer = document.getElementById('paginationIndicators');
+
+// Helper: kunin ang YouTube thumbnail URL galing sa video ID
+function ytThumb(videoId) {
+    return `https://img.youtube.com/vi/${videoId}/hqdefault.jpg`;
+}
+
+// Ibalik ang main card sa thumbnail + play button (bago mag-play ng bago)
+function resetMainCardToThumb(videoId) {
+    mainVideoWrapper.innerHTML = `
+        <img id="mainThumb" class="video-thumb" src="${ytThumb(videoId)}" alt="" loading="lazy">
+        <div class="play-overlay" id="playOverlay">
+            <div class="play-button">►</div>
+        </div>
+    `;
+    document.getElementById('playOverlay').addEventListener('click', () => {
+        playMainVideo(videoId);
+    });
+}
+
+// Palitan ang thumbnail ng aktwal na YouTube player pag pinindot
+function playMainVideo(videoId) {
+    mainVideoWrapper.innerHTML = `
+        <iframe
+            src="https://www.youtube.com/embed/${videoId}?autoplay=1&rel=0&playsinline=1"
+            title="YouTube video player"
+            frameborder="0"
+            allow="autoplay; encrypted-media; picture-in-picture"
+            allowfullscreen>
+        </iframe>
+    `;
+}
 
 // Set video sources safely
 function updateVideoSources() {
@@ -217,25 +244,19 @@ function updateVideoSources() {
     if (!list || list.length === 0) return;
 
     const total = list.length;
-    
+
     // Boundary check
     currentIndex = (currentIndex + total) % total;
 
     const prevIndex = (currentIndex - 1 + total) % total;
     const nextIndex = (currentIndex + 1) % total;
 
-    // Set Main Video
-    mainVideo.pause();
-    mainVideo.src = list[currentIndex];
-    mainVideo.load();
-    playOverlay.classList.remove('hidden');
+    // Set Main Video (thumbnail muna, hindi agad naglalaro)
+    resetMainCardToThumb(list[currentIndex]);
 
-    // Set Previews
-    prevVideo.src = list[prevIndex];
-    prevVideo.load();
-
-    nextVideo.src = list[nextIndex];
-    nextVideo.load();
+    // Set Previews (thumbnail images lang, hindi kailangan mag-play)
+    prevThumb.src = ytThumb(list[prevIndex]);
+    nextThumb.src = ytThumb(list[nextIndex]);
 
     renderPagination();
 }
@@ -271,23 +292,9 @@ function goPrev() {
 }
 
 
-function togglePlay() {
-    if (mainVideo.paused) {
-        mainVideo.play().then(() => {
-            playOverlay.classList.add('hidden');
-        }).catch(err => {
-            console.log("Play blocked:", err);
-            mainVideo.muted = true;
-           mainVideo.play();
-            playOverlay.classList.add('hidden');
-        });
-    } else {
-        mainVideo.pause();
-        playOverlay.classList.remove('hidden');
-    }
-}
-
-
+// Note: hindi na kailangan ng togglePlay function — ang YouTube iframe
+// mismo na ang may sariling play/pause controls pag naka-load na siya.
+// Ang playOverlay click ay hinahandle na sa loob ng resetMainCardToThumb().
 
 // Event Listeners
 nextBtn.onclick = goNext;
@@ -295,9 +302,6 @@ prevBtn.onclick = goPrev;
 
 nextCard.onclick = goNext;
 prevCard.onclick = goPrev;
-
-playOverlay.onclick = togglePlay;
-mainVideo.onclick = togglePlay;
 
 categoryButtons.forEach(btn => {
     btn.onclick = (e) => {

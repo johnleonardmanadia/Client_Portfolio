@@ -1,9 +1,5 @@
 
 
-
-
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -134,15 +130,15 @@
                         <!-- Left Preview -->
                         <div class="video-card side-card" id="prevCard">
                             <div class="video-wrapper">
-                                <video id="prevVideo" muted playsinline></video>
+                                <img id="prevThumb" class="video-thumb" src="" alt="" loading="lazy">
                                 <div class="card-overlay"></div>
                             </div>
                         </div>
 
-                        <!-- Main Video -->
+                        <!-- Main Video (YouTube embed) -->
                         <div class="video-card main-card" id="mainCard">
-                            <div class="video-wrapper">
-                                <video id="mainVideo" playsinline></video>
+                            <div class="video-wrapper" id="mainVideoWrapper">
+                                <img id="mainThumb" class="video-thumb" src="" alt="" loading="lazy">
                                 <div class="play-overlay" id="playOverlay">
                                     <div class="play-button">►</div>
                                 </div>
@@ -152,7 +148,7 @@
                         <!-- Right Preview -->
                         <div class="video-card side-card" id="nextCard">
                             <div class="video-wrapper">
-                                <video id="nextVideo" muted playsinline></video>
+                                <img id="nextThumb" class="video-thumb" src="" alt="" loading="lazy">
                                 <div class="card-overlay"></div>
                             </div>
                         </div>
