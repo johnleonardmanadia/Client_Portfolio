@@ -177,7 +177,7 @@ const videos = {
         
     ],
     ai: [
-        "PUT_AI_VIDEO_ID_1",
+        "YrnBrHmedYs",
         "PUT_AI_VIDEO_ID_2"
     ],
     vsl: [
