@@ -172,7 +172,7 @@ const videos = {
     ugc: [
         "iPW0nMKxRso",
         "mt-uMsler5Q",
-        "PUT_UGC_VIDEO_ID_3",
+        "pnlhthCGDbo",
         "PUT_UGC_VIDEO_ID_4",
         "PUT_UGC_VIDEO_ID_5",
         "PUT_UGC_VIDEO_ID_6"
