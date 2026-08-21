@@ -1,0 +1,354 @@
+
+
+
+/* ============================================================
+   Testimony
+============================================================ 
+
+ Section Wrapper 
+.tm-testimonials-section {
+  width: 100%;
+  padding: 80px 20px;
+  background-color: transparent;
+}
+
+ Container 
+.tm-section-container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  color: #ffffff;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin-top: 60px;
+}
+
+ Header Styling 
+.tm-header-sub {
+  color: var(--gradient-accent);
+  font-size: 14px;
+  letter-spacing: 1.5px;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+  color: #ff5500;  Vibrant Orange accent 
+}
+
+.tm-header-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.tm-title-group h2 {
+  font-size: 38px;
+  font-weight: 700;
+  margin: 0;
+}
+
+ Accent green line below title 
+.tm-title-group::after {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 3px;
+  background-color: #ff9900;
+  margin-top: 10px;
+  border-radius: 2px;
+}
+
+.tm-header-description {
+  color: var(--gradient-accent);
+  font-size: 14px;
+  max-width: 320px;
+  line-height: 1.4;
+  margin: 0;
+}
+
+ Grid Layout 
+.tm-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+}
+
+ Testimonial Card 
+.tm-card {
+  position: relative;
+  height: 340px;
+  border-radius: 20px;
+  overflow: hidden;
+  cursor: pointer;
+  background-color: #161b22;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+ Direct Video Element inside Card 
+.tm-card-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.tm-card-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.9) 0%,
+    rgba(0, 0, 0, 0.2) 50%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  transition: background 0.3s ease;
+  pointer-events: none;  Binibigyang-daan ang hover sa video element sa ilalim 
+}
+
+*/
+
+
+
+/* Green Play Button sa Gitna 
+.tm-play-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 58px;
+  height: 58px;
+  background-color: #ff9900;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 20px rgba(255, 0, 0, 0.5);
+  transition:
+    transform 0.3s ease,
+    background-color 0.3s ease;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.tm-play-btn::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  border-top: 8px solid transparent;
+  border-bottom: 8px solid transparent;
+  border-left: 14px solid #000000;
+  margin-left: 3px;
+}
+
+*/
+
+/* Card Details sa Ibabang Kaliwa 
+.tm-card-info {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  right: 20px;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.tm-card-name {
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.tm-card-role {
+  color: #d1d5db;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+
+ Hover Effects
+.tm-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.5);
+}
+
+.tm-card:hover .tm-card-video {
+  transform: scale(1.05);
+}
+
+.tm-card:hover .tm-play-btn {
+  transform: translate(-50%, -50%) scale(1.1);
+  background-color: #ff2a2a;
+}
+
+ */
+
+/* Video Popup Modal 
+.tm-modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.85);
+  z-index: 9999;
+  justify-content: center;
+  align-items: center;
+}
+
+.tm-modal-content {
+  position: relative;
+  width: 90%;
+  max-width: 380px;
+  height: 80vh;
+  background-color: #000;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.tm-modal-content video {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.tm-close-btn {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  color: #ffffff;
+  font-size: 32px;
+  cursor: pointer;
+  z-index: 10000;
+}
+
+
+
+*/
+
+
+
+
+
+
+
+
+
+/* Section Wrapper   TEstimoy 2 */
+.rt-reviews-section {
+    padding-top: 100px;
+  width: 100%;
+  padding: 60px 20px;
+  background-color: transparent; /* Malinis at walang sariling background image */
+}
+
+.rt-container {
+  max-width: 1200px;
+  width: 90%;
+  margin: 0 auto;
+  font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+
+}
+
+/* Grid for Cards */
+.rt-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 24px;
+}
+
+/* Review Card Styling */
+.rt-card {
+  position: relative;
+  background: rgba(255, 255, 255, 0.03); /* Subtle dark container */
+  border: 1px solid rgba(255, 255, 255, 0.08); /* Manipis na border */
+  border-radius: 20px;
+  padding: 32px 28px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  backdrop-filter: blur(10px);
+  transition:
+    transform 0.3s ease,
+    border-color 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+/* Card Hover Effect */
+.rt-card:hover {
+  transform: translateY(-5px);
+  border-color: #ff9900;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+}
+
+/* Quote Icon */
+.rt-quote-icon {
+  margin-bottom: 16px;
+}
+
+/* Stars & Date Alignment */
+.rt-rating-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.rt-stars {
+  color: #ff9900; /* Neon  Stars */
+  font-size: 18px;
+  letter-spacing: 2px;
+}
+
+.rt-date {
+  color: #8a8d93;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+/* Quote Body Text */
+.rt-quote-text {
+  color: #d1d5db;
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 32px;
+  font-weight: 400;
+}
+
+/* Author Details at Bottom */
+.rt-author-info {
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+  padding-top: 18px;
+}
+
+.rt-author-name {
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.rt-author-role {
+  color: #9ca3af;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+
+/* Header 
+.featured-works { padding: 20px 0 80px; }
+.section-header { display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 30px; }
+.eyebrow { font-size: 0.85rem; font-weight: 700; color: #ff5500; display: block; margin-bottom: 8px; }
+.heading { font-size: 2.8rem; font-weight: 800; background: linear-gradient(180deg, #fff 0%, #a1a1a1 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+.description { color: var(--text-muted); font-size: 0.95rem; }
+
+*/

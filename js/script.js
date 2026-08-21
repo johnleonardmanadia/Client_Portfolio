@@ -178,7 +178,8 @@ const videos = {
     ],
     ai: [
         "YrnBrHmedYs",
-        "PUT_AI_VIDEO_ID_2"
+        "eZBNjDCNlw4",
+        "SW9V44x4gEM"
     ],
     vsl: [
         "PUT_VSL_VIDEO_ID_1"
