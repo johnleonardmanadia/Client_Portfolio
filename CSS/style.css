@@ -1357,6 +1357,7 @@ body {
 
 /* Section Wrapper   TEstimoy 2 */
 .rt-reviews-section {
+ 
   width: 100%;
   padding: 60px 20px;
   background-color: transparent; /* Malinis at walang sariling background image */
@@ -1367,7 +1368,7 @@ body {
   width: 90%;
   margin: 0 auto;
   font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-  margin-bottom: 100px;
+  margin-bottom: 50px;
 }
 
 /* Grid for Cards */
