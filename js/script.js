@@ -173,9 +173,8 @@ const videos = {
         "iPW0nMKxRso",
         "mt-uMsler5Q",
         "pnlhthCGDbo",
-        "PUT_UGC_VIDEO_ID_4",
-        "PUT_UGC_VIDEO_ID_5",
-        "PUT_UGC_VIDEO_ID_6"
+        "kgAmVArPUQ4"
+        
     ],
     ai: [
         "PUT_AI_VIDEO_ID_1",
