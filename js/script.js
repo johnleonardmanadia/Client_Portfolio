@@ -186,7 +186,8 @@ const videos = {
         "Cw90YgvH8ic"
     ],
     winningAds: [
-        "PUT_WINNINGADS_VIDEO_ID_1"
+        "zCM05gL3TBk",
+        ""
     ]
 };
 
