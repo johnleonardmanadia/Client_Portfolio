@@ -183,7 +183,8 @@ const videos = {
     ],
     vsl: [
         "JdInT8Q5Vw4",
-        "Cw90YgvH8ic"
+        "Cw90YgvH8ic",
+        "hzLQOzxS0g0"
     ],
     winningAds: [
         "zCM05gL3TBk",
