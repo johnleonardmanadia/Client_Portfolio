@@ -182,7 +182,7 @@ const videos = {
         "SW9V44x4gEM"
     ],
     vsl: [
-        "PUT_VSL_VIDEO_ID_1"
+        "JdInT8Q5Vw4"
     ],
     winningAds: [
         "PUT_WINNINGADS_VIDEO_ID_1"
