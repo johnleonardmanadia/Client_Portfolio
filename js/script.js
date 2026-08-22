@@ -188,7 +188,8 @@ const videos = {
     ],
     winningAds: [
         "zCM05gL3TBk",
-        "SAELY0lcRO8"
+        "SAELY0lcRO8",
+        "LruwnjkzHLw"
     ]
 };
 
