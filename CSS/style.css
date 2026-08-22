@@ -439,7 +439,7 @@
   grid-template-columns: 1fr 1fr;
   gap: 50px;
   align-items: start;
-  padding-top: 100px;
+  padding-top: 20px;
 }
 
 /* LEFT COLUMN */

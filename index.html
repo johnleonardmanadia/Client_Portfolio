@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -381,9 +379,25 @@
     
   <section id="testimonials" class="rt-reviews-section">  
   <div class="rt-container">
+
+
+          <!--    Top Header --> 
+    <div class="tm-header-sub">In their words</div>
+    <div class="tm-header-main">
+      <div class="tm-title-group">
+        <h2>Testimonials</h2>
+      </div>
+      <p class="tm-header-description">
+        Hear directly from the people I've edited for.
+      </p>
+    </div>
+
+
+    
+
     <div class="rt-cards-grid">
 
-      <div class="rt-card">
+      <div class="rt-card rt-animate">
         <div class="rt-quote-icon">
           <svg width="28" height="24" viewBox="0 0 24 24" fill="#ff9900">
             <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
@@ -405,7 +419,7 @@
         </div>
       </div>
 
-      <div class="rt-card">
+      <div class="rt-card rt-animate">
         <div class="rt-quote-icon">
           <svg width="28" height="24" viewBox="0 0 24 24" fill="#ff9900">
             <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
@@ -595,6 +609,27 @@
     
 
 <script src="js/script.js"></script>   
+
+<script>
+  // Scroll-in animation para sa testimonial cards
+  document.addEventListener("DOMContentLoaded", function () {
+    const rtCards = document.querySelectorAll(".rt-card.rt-animate");
+
+    const rtObserver = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("rt-visible");
+            rtObserver.unobserve(entry.target); // once lang mag-a-animate
+          }
+        });
+      },
+      { threshold: 0.2 }
+    );
+
+    rtCards.forEach((card) => rtObserver.observe(card));
+  });
+</script>
 
 
 </body>
